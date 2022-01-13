@@ -53,5 +53,4 @@ def insert_turnover(valores_insercao) :
     conn.close()
 
 if __name__ == '__main__' :
-    
     app.run()
