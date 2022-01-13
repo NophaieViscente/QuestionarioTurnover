@@ -1,0 +1,211 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Questionário de Desligamento {% endblock %}</h1>
+    <br/>
+    <br/>
+    <form  action=http://localhost:5000/add method="POST">
+        <h6>Matrícula</h6>
+            <input type="number" name="matricula" id="matricula" min="1" max="9999">
+        <h6>Qual a a sua escala de satisfação com o trabalho que exercia?</h6> 
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_trab1" name="satis_trabRadios" value= "0" checked>
+            <label class="custom-control-label" for="satis_trab1">Insatisfeito</label>
+        </div>      
+       
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_trab2" name="satis_trabRadios" value= "1"></input>
+            <label class="custom-control-label" for="satis_trab2">Parcialmente Satisfeito</label>
+        </div>
+          
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_trab3" name="satis_trabRadios" value= "2">
+            <label class="custom-control-label" for="satis_trab3">Satisfeito</label>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_trab4" name="satis_trabRadios" value= "3">
+            <label class="custom-control-label" for="satis_trab4">Muito Satisfeito</label>
+        </div>
+    <br/>
+        <h6>Qual a a sua escala de satisfação com o seu supervisor?</h6>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_sup1" name="satis_supRadios" value= "0"checked>
+            <label class="custom-control-label" for="satis_sup1">Insatisfeito</label>
+        </div>
+          
+        
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_sup2" name="satis_supRadios" value= "1">
+            <label class="custom-control-label" for="satis_sup2">Parcialmente Satisfeito</label>
+        </div>
+          
+        
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_sup3" name="satis_supRadios" value= "2">
+            <label class="custom-control-label" for="satis_sup3">Satisfeito</label>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_sup4" name="satis_supRadios" value= "3">
+            <label class="custom-control-label" for="satis_sup4">Muito Satisfeito</label>
+        <br/>
+        <br/>
+        </div>
+        <h6>Qual a a sua escala de satisfação com os seus colegas?</h6>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_colegas1" name="satis_colRadios" value= "0" checked>
+            <label class="custom-control-label" for="satis_colegas1">Insatisfeito</label>
+        </div>
+          
+        
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_colegas2" name="satis_colRadios"value= "1">
+            <label class="custom-control-label" for="satis_colegas2">Parcialmente Satisfeito</label>
+        </div>
+          
+        
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_colegas3" name="satis_colRadios"value= "2">
+            <label class="custom-control-label" for="satis_colegas3">Satisfeito</label>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_colegas4" name="satis_colRadios"value= "3">
+            <label class="custom-control-label" for="satis_colegas4">Muito Satisfeito</label>
+        <br/>
+        <br/>
+        </div>
+        <h6>Qual a a sua escala de satisfação com o refeitório?</h6>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_refeitorio1" name="satis_refRadios"value= "0"checked>
+            <label class="custom-control-label" for="satis_refeitorio1">Insatisfeito</label>
+        </div>
+          
+        
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_refeitorio2" name="satis_refRadios" value= "1">
+            <label class="custom-control-label" for="satis_refeitorio2">Parcialmente Satisfeito</label>
+        </div>
+          
+        
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_refeitorio3" name="satis_refRadios"value="2">
+            <label class="custom-control-label" for="satis_refeitorio3">Satisfeito</label>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_refeitorio4" name="satis_refRadios"value= "3">
+            <label class="custom-control-label" for="satis_refeitorio4">Muito Satisfeito</label>
+        <br/>
+        <br/>
+        </div>
+        <h6>Qual a a sua escala de satisfação com o ambiente de trabalho?</h6>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_instalacoes1" name="satis_instRadios"value= "0"checked>
+            <label class="custom-control-label" for="satis_instalacoes1">Insatisfeito</label>
+        </div>
+          
+        
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_instalacoes2" name="satis_instRadios" value= "1">
+            <label class="custom-control-label" for="satis_instalacoes2">Parcialmente Satisfeito</label>
+        </div>
+          
+        
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_instalacoes3" name="satis_instRadios"value="2">
+            <label class="custom-control-label" for="satis_instalacoes3">Satisfeito</label>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="satis_instalacoes4" name="satis_instRadios"value= "3">
+            <label class="custom-control-label" for="satis_instalacoes4">Muito Satisfeito</label>
+        <br/>
+        <br/>
+        </div>
+        <h6>Qual a a sua escala de satisfação com o salário praticado?</h6>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="satis_sal1" name="satis_salRadios"value= "0"checked>
+                <label class="custom-control-label" for="satis_Sal1">Insatisfeito</label>
+            </div>
+              
+            
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="satis_Sal2" name="satis_salRadios" value= "1">
+                <label class="custom-control-label" for="satis_Sal2">Parcialmente Satisfeito</label>
+            </div>
+              
+            
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="satis_Sal3" name="satis_salRadios"value="2">
+                <label class="custom-control-label" for="satis_Sal3">Satisfeito</label>
+            </div>
+    
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="satis_Sal4" name="satis_salRadios"value= "3">
+                <label class="custom-control-label" for="satis_Sal4">Muito Satisfeito</label>
+            <br/>
+            <br/>
+            </div>
+            <h6>Qual a a sua escala de satisfação com os benefícios fornecidos? (cartão farmácia/cesta básica)</h6>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="satis_Ben1" name="satis_benRadios"value= "0"checked>
+                    <label class="custom-control-label" for="satis_Ben1">Insatisfeito</label>
+                </div>
+                  
+                
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="satis_Ben2" name="satis_benRadios" value= "1">
+                    <label class="custom-control-label" for="satis_Ben2">Parcialmente Satisfeito</label>
+                </div>
+                  
+                
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="satis_Ben3" name="satis_benRadios"value="2">
+                    <label class="custom-control-label" for="satis_Ben3">Satisfeito</label>
+                </div>
+        
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="satis_Ben4" name="satis_benRadios"value= "3">
+                    <label class="custom-control-label" for="satis_Ben4">Muito Satisfeito</label>
+                <br/>
+                <br/>
+                </div>
+        <h6>Houve algum tipo de atrito com seu supervisor?</h6>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="atr_sup1" name="atr_supRadios"value="0" checked>
+                    <label class="custom-control-label" for="atr_sup1">Não</label>
+                </div>
+        
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="atr_sup2" name="atr_supRadios"value= "1">
+                    <label class="custom-control-label" for="atr_sup2">Sim</label>
+                </div>
+                <br/>
+        <h6>Houve algum tipo de atrito com seus colegas?</h6>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="atr_col1" name="atr_colRadios"value="0" checked>
+            <label class="custom-control-label" for="atr_col1">Não</label>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="atr_col2" name="atr_colRadios"value= "1">
+            <label class="custom-control-label" for="atr_col2">Sim</label>
+        </div>
+        <br/>
+        <h6>Utiliza o transporte cedido pela empresa?</h6>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="trans1" name="transRadios"value="0" checked>
+            <label class="custom-control-label" for="trans1">Não</label>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="trans2" name="transRadios"value= "1">
+            <label class="custom-control-label" for="trans2">Sim</label>
+        </div>
+        <br/>
+    <br/>        
+        <button type="submit" class="btn btn-primary" name="submit_button" onclick="add_Dados">Cadastrar</button>       
+    </form>
+{% endblock %}

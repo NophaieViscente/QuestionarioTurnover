@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <h1>{% block title %} Relatório Desligamentos {% endblock %}</h1>
+    {% for turnover in desligamento %}
+        <a href="#">
+            <h2>{{ turnover['matricula'] }}</h2>
+        </a>
+        <span class="badge badge-primary">{{ turnover['dta'] }}</span>
+        <hr>
+    {% endfor %}
+
+{% endblock %}
